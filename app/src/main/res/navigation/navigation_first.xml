@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_first"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        tools:layout="@layout/fragment__home"
+        android:name="com.example.navigatewithgraph.fragment.HomeFragment"
+        android:label="Home" >
+        <action
+            android:id="@+id/action_homeFragment_to_stepOneFragment"
+            app:destination="@id/stepOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stepOneFragment"
+        tools:layout="@layout/fragment_step_one"
+        android:name="com.example.navigatewithgraph.fragment.StepOneFragment"
+        android:label="Step One " >
+        <action
+            android:id="@+id/action_stepOneFragment_to_stepTwoFragment"
+            app:destination="@id/stepTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentStepThree"
+        tools:layout="@layout/fragment_step_three"
+        android:name="com.example.navigatewithgraph.fragment.StepThreeFragment"
+        android:label="Step Three" >
+        <action
+            android:id="@+id/action_fragmentStepThree_to_stepFourFragment"
+            app:destination="@id/stepFourFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stepTwoFragment"
+        tools:layout="@layout/fragment_step_two"
+        android:name="com.example.navigatewithgraph.fragment.StepTwoFragment"
+        android:label="Step Two" >
+        <action
+            android:id="@+id/action_stepTwoFragment_to_fragmentStepThree"
+            app:destination="@id/fragmentStepThree" />
+    </fragment>
+    <fragment
+        android:id="@+id/stepFourFragment"
+        tools:layout="@layout/fragment_step_four"
+        android:name="com.example.navigatewithgraph.fragment.StepFourFragment"
+        android:label="StepFour" />
+    <fragment
+        android:id="@+id/scoreFragment"
+        tools:layout="@layout/fragment_score"
+        android:name="com.example.navigatewithgraph.fragment.ScoreFragment"
+        android:label="Score" />
+    <fragment
+        android:id="@+id/feedBackFragment"
+        tools:layout="@layout/fragment_feedback"
+        android:name="com.example.navigatewithgraph.fragment.FeedBackFragment"
+        android:label="FeedBack" />
+</navigation>

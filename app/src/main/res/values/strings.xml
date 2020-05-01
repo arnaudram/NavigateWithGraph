@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">NavigateWithGraph</string>
+    <string name="label_name">name</string>
+    <string name="tools_edit_name">My Name</string>
+    <string name="label_email">Email</string>
+    <string name="tools_edit_email">exampleemail@gmail.com</string>
+    <string name="tools_edit_password">password123.*</string>
+    <string name="label_edit_password">Password</string>
+    <string name="tools_user_email_header_drawer">exampleemail@gmail.com</string>
+    <string name="tools_user_name_header_drawer">User name</string>
+    <string name="text_button_next">NEXT</string>
+    <string name="score">SCORE</string>
+    <string name="feedback">Thank you for your feedback</string>
+    <string name="congratulation" tools:ignore="ExtraTranslation">CONGRATULATION !!!</string>
+</resources>
